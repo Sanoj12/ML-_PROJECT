@@ -1,0 +1,69 @@
+<html>
+   <body>
+      <div class="login">
+         <h1>Student exam performance indicator</h1>
+      </div>
+
+      <form action="{{url_for('pred_datapoint')}}" method="post">
+         <h1>STUDENT PERFORMANCE PREDICTION</h1>
+
+
+         <div class="mb-3">
+            <label class="form-label">Hours Studied</label>
+            <input class="" type="number" name="Hours_Studied" placeholder="enter the Hours_Studied"/>
+         </div>
+
+
+         <div class="mb-3">
+            <label class="form-label">Previous SCores</label>
+            <input class="" type="number" name="Previous_Scores" placeholder="enter the previous SCores"/>
+         </div>
+
+
+         
+         <div class="mb-3">
+            <label class="form-label">Extra Activities</label>
+            
+            <select class="form-control" name="Extracurricular_Activities" placeholder="enter the extra activities">
+               <option class="placeholder">select y/n</option>
+               <option value="Yes">
+                    Yes
+               </option>
+               <option value="No">
+                    No
+               </option>
+
+            </select>
+
+         </div>
+
+         
+         <div class="mb-3">
+            <label class="form-label">Sleep Hours</label>
+            <input class="" type="number" name="Sleep_Hours" placeholder="enter the Hours of sleep"/>
+
+           
+         </div>
+
+
+              
+         <div class="mb-3">
+            <label class="form-label">Sample question paper practised</label>
+            <input class="" type="number" name="Sample_Question_Papers_Practiced" placeholder="enter the sample practise question"/>
+
+           
+         </div>
+
+         <div class="mb-3">
+            <input class="btn btn-primary" type="submit" value="Predict your performance index" required />
+        </div>
+      </form>
+
+
+      <h2>
+        THE  prediction is {{results}}
+     </h2>
+      
+   </body>
+   
+</html>
