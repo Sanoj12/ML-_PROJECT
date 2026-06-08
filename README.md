@@ -11,7 +11,7 @@ This project predicts a student's **Performance Index** (target variable) using 
 The entire ML lifecycle is covered:
 - **Data Ingestion** → Reading and splitting raw data into train/test sets
 - **Data Transformation** → Feature encoding, scaling, and preprocessing pipelines
-- **Model Training** → Training and evaluating 8 different regression models
+- **Model Training** → Training and evaluating 3 different regression models
 - **Prediction Pipeline** → Loading the best model and making real-time predictions
 - **Web Application** → A Flask-based UI where users can input data and get predictions
 
